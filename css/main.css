@@ -1,0 +1,119 @@
+@import url(plugins/reset.css);
+
+/* Import Erick Meyer Reset  */
+
+div:nth-of-type(1) {
+  display: block;
+  height: 1em;
+  width: 10em;
+  background: #ff494c;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-animation-name: rotateDiv;
+  animation-name: rotateDiv;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+}
+
+div:nth-of-type(2) {
+  display: block;
+  height: 1em;
+  width: 8em;
+  background: rgba(0, 174, 255, 0.62);
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  -webkit-animation-name: rotateDiv2;
+  animation-name: rotateDiv2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotateDiv {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@keyframes rotateDiv {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@-webkit-keyframes rotateDiv2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@keyframes rotateDiv2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+  }
+}

@@ -1,0 +1,75 @@
+/* Import Erick Meyer Reset  */
+@import 'plugins/reset.css';
+
+div:nth-of-type(1) {
+	display: block;
+	height: 1em; 
+	width: 10em;
+	background: #ff494c;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	animation-name: rotateDiv;
+	animation-duration:60s;
+	transition-timing-function:  linear;
+	animation-iteration-count: infinite;
+	position: absolute;
+	border-radius: 20px;
+	top: 50%;
+	left: 50%;
+	
+	
+	
+}
+
+div:nth-of-type(2) {
+	display: block;
+	height: 1em;
+	width: 8em;
+	background: rgba(0,174,255,0.62);
+	position: absolute;
+	border-radius: 20px;
+	top: 50%;
+	left: 50%;
+	font-size: 2em;
+	animation-name: rotateDiv2;
+	animation-duration:1s;
+	transition-timing-function: ease;
+	animation-iteration-count: infinite;
+
+}
+
+
+@keyframes rotateDiv {
+		0% {
+			transform: rotate(0deg);
+			transform-origin: left;
+		}
+						
+		100% {
+			transform: rotate(360deg);
+			transform-origin: left;
+		}
+		
+		
+		
+		
+}
+
+@keyframes rotateDiv2 {
+		0% {
+			transform: rotate(0deg);
+			transform-origin: left;
+		}
+						
+		100% {
+			transform: rotate(-360deg);
+			transform-origin: left;
+		}
+		
+		
+		
+		
+}
